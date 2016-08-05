@@ -4,13 +4,33 @@
     <meta charset="utf-8">
     <title>Mini Arcade</title>
 
-    <link rel="stylesheet" href="/css/snakes.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/snakes.css" media="screen" charset="utf-8">
 
   </head>
   <body>
 
 
-    <script src="/js/snakes.js"></script>
+    <script>
+
+
+    // Creating a canvas and set var
+      var WIDTH = 700, HEIGHT = 600, pi = Math.PI;
+      var canvas, ctx, keystate;
+      var player, ai, ball;
+
+      function main() {
+        canvas = document.createElement("canvas");
+        canvas.width = WIDTH;
+        canvas.height = HEIGHT;
+        ctx = canvas.getContext("2d");
+        document.body.appendChild(canvas);
+
+      }
+
+
+
+
+    </script>
 
   </body>
 </html>
