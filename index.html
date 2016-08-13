@@ -25,6 +25,31 @@
         ctx = canvas.getContext("2d");
         document.body.appendChild(canvas);
 
+        init();
+        
+        var loop = function() {
+
+          // new frame for when the game loops
+          window.requestAnimationFrame(loop, canvas)
+        };
+
+        window.requestAnimationFrame(loop, canvas);
+
+        function init() {
+
+        }
+
+      }
+
+
+      // FUNCTION update for when new requests are coming through
+      function update() {
+
+      }
+
+      // FUNCTION for when there is draw
+      function draw() {
+
       }
 
 
